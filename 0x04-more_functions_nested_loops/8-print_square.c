@@ -1,14 +1,13 @@
 #include "main.h"
+
 /**
- * print_square - Prints a diagonal pattern of int given
- * @size: Width & Height of square
- * Return: void
+ * print_square - a function that prints a square, followed by a new line
+ * @size: size of both width and length
+ * Return: a square made of '#'
  */
 void print_square(int size)
 {
-	int i;
-
-	int a;
+	int co, ro;
 
 	if (size <= 0)
 	{
@@ -16,9 +15,10 @@ void print_square(int size)
 	}
 	else
 	{
-		for (i = 1; i <= size; i++)
+		for (co = 1; co <= size; co++)
 		{
-			for (a = 1; a <= size; a++)
+			_putchar('#');
+			for (ro = 2; ro <= size; ro++)
 			{
 				_putchar('#');
 			}
