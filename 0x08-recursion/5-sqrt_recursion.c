@@ -11,11 +11,12 @@
 int sqrt_help(int n, int start, int end)
 {
 	int mid;
+	int square;
 
 	if (start <= end)
 	{
 		mid = (start + end) / 2;
-		int square = mid * mid;
+		square = mid * mid;
 
 		if (square == n)
 		{
