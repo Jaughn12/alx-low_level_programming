@@ -1,38 +1,41 @@
-Certainly! Here's a README file for the code we discussed:
+# Code Snippets
 
-```
-# Program Name Printer
+This repository contains several code snippets written in C. Each code snippet demonstrates a different concept or functionality. Below is a brief description of each code snippet:
 
-This program prints its own name.
+## Code Snippet 1: argv[0] Printing
 
-## Description
+- File: `0-whatsmyname.c`
 
-The "Program Name Printer" is a simple C program that prints the name of the program itself. It utilizes the command-line arguments to access the program name and displays it on the console.
+This code snippet prints the name of the program itself, which is stored in `argv[0]`.
 
-The program takes advantage of the `argv` parameter passed to the `main` function, which holds an array of strings representing the command-line arguments. The program retrieves the program name from `argv[0]` and uses the `printf` function to print it.
+## Code Snippet 2: Argument Count
 
-## Usage
+- File: `1-args.c`
 
-1. Compile the program using a C compiler. For example, with GCC:
-   ```
-   gcc -o program_name_printer program_name_printer.c
-   ```
+This code snippet prints the number of command-line arguments passed to the program (`argc`) minus 1.
 
-2. Run the compiled program:
-   ```
-   ./program_name_printer
-   ```
+## Code Snippet 3: Argument Printing
 
-   The program will print the name of the program, including the path if provided.
+- File: `2-args.c`
 
-3. Rename the program file (e.g., `mv program_name_printer renamed_program`), and run it again:
-   ```
-   ./renamed_program
-   ```
+This code snippet prints all the command-line arguments passed to the program, one argument per line.
 
-   The program will automatically print the new name without needing to recompile it.
+## Code Snippet 4: Argument Multiplication
 
-## Compatibility
+- File: `3-mul.c`
 
-The "Program Name Printer" code is written in standard C and should be compatible with most C compilers.
+This code snippet takes two command-line arguments and multiplies them together. If exactly two arguments are provided, it calculates their product and prints the result. Otherwise, it prints an error message.
+
+## Code Snippet 5: Argument Summation
+
+- File: `4-add.c`
+
+This code snippet calculates the sum of all the command-line arguments that are provided as integers. It checks if at least one argument is provided. If no arguments are provided, it prints `0`. If arguments are provided, it converts each argument to an integer and adds it to the sum. Non-numeric arguments are treated as an error.
+
+## Code Snippet 6: Minimum Coin Change
+
+- File: `100-change.c`
+
+This code snippet calculates the minimum number of coins required to make change for a given amount of cents. It expects one command-line argument representing the amount of cents. If the number of arguments is not exactly 1, it prints an error message. If the argument is negative, it prints `0`. Otherwise, it calculates the minimum number of coins using available denominations (25, 10, 5, 2, 1) and prints the result.
+
 
