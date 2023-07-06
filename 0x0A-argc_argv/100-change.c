@@ -26,12 +26,16 @@ int main(int argc, char *argv[])
 	{
 		int coins[] = {25, 10, 5, 2, 1};
 		int num_coins = 0;
-		int i;
+		int i, remaining;
 
 		for (i = 0; i < sizeof(coins) / sizeof(coins[0]); i++)
 		{
-			num_coins += cents / coins[i];
-			cents %= coins[i];
+			if (cents >= coins[i])
+			{
+				num_coins += cents / coins[i];
+				remaining = cents % coins[i];
+				cents = remaining;
+			}
 		}
 
 		printf("%d\n", num_coins);
