@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * main - Entry point of the program
@@ -15,7 +16,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; j < argv[i][j]; j++)
+		for (j = 0; j < strlen(argv[i]); j++)
 		{
 			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
