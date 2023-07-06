@@ -17,11 +17,11 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	int sum = 0;
+	int sum, i, j;
 
-	for (int i = 1; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-		for (int j = 0; j < strlen(argv[i]); j++)
+		for (j = 0; j < strlen(argv[i]); j++)
 		{
 			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
