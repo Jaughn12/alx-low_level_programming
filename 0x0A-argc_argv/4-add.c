@@ -17,8 +17,8 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	int sum = 0;
-	int i, j;
+	int sum, j = 0;
+	int i = 1;
 
 	for (i = 1; i < argc; i++)
 	{
